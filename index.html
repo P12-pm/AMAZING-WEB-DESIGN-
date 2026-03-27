@@ -35,7 +35,7 @@
    <link rel="stylesheet" href="assets/css/theme-toggle.css">
    <link rel="stylesheet" href="assets/css/animated-background.css">
    <link rel="stylesheet" href="assets/css/premium-3d.css">
-   <link rel="stylesheet" href="assets/css/mobile-hero-fix.css">
+   <link rel="stylesheet" href="assets/css/hero-redesign.css">
 </head>
 
 <body>
@@ -238,71 +238,134 @@
             <main>
                <!-- ==== banner start ==== -->
                <section class="banner">
+                  <!-- Particle Dots -->
+                  <div class="banner__particles">
+                     <div class="banner__particle"></div>
+                     <div class="banner__particle"></div>
+                     <div class="banner__particle"></div>
+                     <div class="banner__particle"></div>
+                     <div class="banner__particle"></div>
+                     <div class="banner__particle"></div>
+                  </div>
+
+                  <!-- Social Side Bar (Desktop) -->
+                  <div class="banner__social-side d-none d-lg-flex">
+                     <a href="https://www.facebook.com/" target="_blank" aria-label="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                     </a>
+                     <a href="https://www.instagram.com/" target="_blank" aria-label="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                     </a>
+                     <a href="https://www.linkedin.com/" target="_blank" aria-label="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                     </a>
+                     <a href="https://www.twitter.com/" target="_blank" aria-label="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                     </a>
+                  </div>
+
                   <div class="container">
-                     <div class="row">
-                        <div class="col-12">
-                           <div class="banner__content">
-                              <h1 class="text-uppercase text-start fw-9 mb-0 title-anim">
-                                 We are
-                                 <span class="text-stroke">creative</span>
-                                 <span class="interval">
-                                    <i class="icon-arrow-top-right"></i>
-                                    digital agency
-                                 </span>
-                              </h1>
-                              <div class="banner__content-inner">
-                                 <p>
-                                    We are a full-service website design, development
-                                    and digital marketing company specializing in SEO,
-                                    content marketing that grows brands.
-                                 </p>
-                                 <div class="cta section__content-cta">
-                                    <div class="single">
-                                       <h5 class="fw-7">17+</h5>
-                                       <p class="fw-5">years of experience</p>
-                                    </div>
-                                    <div class="single">
-                                       <h5 class="fw-7">25k</h5>
-                                       <p class="fw-5">completed projects</p>
-                                    </div>
+                     <div class="banner__wrapper">
+
+                        <!-- Left Content -->
+                        <div class="banner__left">
+                           <div class="banner__badge">
+                              <div class="pulse-dot"></div>
+                              <span>Digital Creative Agency</span>
+                           </div>
+
+                           <h1 class="banner__title">
+                              <span class="line">We Build</span>
+                              <span class="line">
+                                 <span class="gradient-text">Creative</span> &
+                              </span>
+                              <span class="line">
+                                 <span class="outline-text">Digital</span> Solutions
+                              </span>
+                           </h1>
+
+                           <p class="banner__description">
+                              We are a full-service website design, development and digital
+                              marketing company specializing in SEO, content marketing that
+                              grows brands and drives results.
+                           </p>
+
+                           <div class="banner__cta">
+                              <a href="contact-us.html" class="btn-hero-primary">
+                                 <span>Get Started</span>
+                                 <i class="fa-solid fa-arrow-right"></i>
+                              </a>
+                              <a href="https://vimeo.com/497586159" target="_blank" class="btn-hero-secondary">
+                                 <div class="play-circle">
+                                    <i class="fa-solid fa-play"></i>
                                  </div>
+                                 <span>Watch Reel</span>
+                              </a>
+                           </div>
+
+                           <div class="banner__stats">
+                              <div class="banner__stat">
+                                 <div class="banner__stat-number">
+                                    17<span>+</span>
+                                 </div>
+                                 <div class="banner__stat-label">Years Experience</div>
+                              </div>
+                              <div class="banner__stat">
+                                 <div class="banner__stat-number">
+                                    25<span>k</span>
+                                 </div>
+                                 <div class="banner__stat-label">Projects Done</div>
+                              </div>
+                              <div class="banner__stat">
+                                 <div class="banner__stat-number">
+                                    99<span>%</span>
+                                 </div>
+                                 <div class="banner__stat-label">Client Satisfaction</div>
                               </div>
                            </div>
                         </div>
+
+                        <!-- Right Visual -->
+                        <div class="banner__right">
+                           <div class="banner__visual">
+                              <!-- Orbit Ring -->
+                              <div class="banner__orbit">
+                                 <div class="banner__orbit-dot"></div>
+                              </div>
+
+                              <!-- Main Image -->
+                              <div class="banner__image-main">
+                                 <img src="assets/images/banner/banner-one-thumb.png"
+                                    alt="Amazing Webtech - Digital Agency">
+                              </div>
+
+                              <!-- Floating Card Top -->
+                              <div class="banner__float-card banner__float-card--top">
+                                 <div class="float-card__icon float-card__icon--purple">
+                                    <i class="fa-solid fa-code"></i>
+                                 </div>
+                                 <div class="float-card__title">Web Development</div>
+                                 <p class="float-card__text">200+ Projects</p>
+                              </div>
+
+                              <!-- Floating Card Bottom -->
+                              <div class="banner__float-card banner__float-card--bottom">
+                                 <div class="float-card__icon float-card__icon--pink">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                 </div>
+                                 <div class="float-card__title">SEO & Marketing</div>
+                                 <p class="float-card__text">3x Growth Average</p>
+                              </div>
+                           </div>
+                        </div>
+
                      </div>
                   </div>
 
-                  <img src="assets/images/banner/banner-one-thumb.png" alt="Image"
-                     class="banner-one-thumb d-none d-sm-block g-ban-one">
-
-                  <img src="assets/images/star.png" alt="Image" class="star">
-
-                  <div class="banner-left-text banner-social-text d-none d-md-flex">
-                     <a href="mailto:info@amazingwebtech.com">
-                        mail : info@amazingwebtech.com
-                     </a>
-                     <a href="tel:+919099014070">Call : +91 90990 14070</a>
-                  </div>
-
-                  <div class="banner-right-text banner-social-text d-none d-md-flex">
-                     <a href="https://www.instagram.com/" target="_blank">instagram</a>
-                     <a href="https://www.pinterest.com/" target="_blank">Linkedin</a>
-                     <a href="https://www.facebook.com/" target="_blank">facebook</a>
-                  </div>
-
-                  <a class="video-frame video-btn" href="https://vimeo.com/497586159?fl=pl&fe=sh" target="_blank">
-                     <img src="assets/images/video-frame.png" alt="Image">
-                     <svg class="play-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 6L17 12L7 18V6Z" fill="white" />
-                     </svg>
-                  </a>
-
-                  <div class="lines d-none d-lg-flex">
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
-                     <div class="line"></div>
+                  <!-- Scroll Indicator -->
+                  <div class="banner__scroll d-none d-lg-flex">
+                     <span class="banner__scroll-text">Scroll</span>
+                     <div class="banner__scroll-line"></div>
                   </div>
                </section>
                <!-- ==== / banner end ==== -->
